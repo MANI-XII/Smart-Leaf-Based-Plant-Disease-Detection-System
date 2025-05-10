@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-around;
+    background: #007bff;
+    padding: 10px;
+}
+
+.form-toggle button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-toggle button.active {
+    border-bottom: 2px solid #fff;
+}
+
+.form {
+    display: none;
+    padding: 20px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #0056b3;
+}
+
+#login-form.active, #register-form.active {
+    display: block;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+    color: red;
+}
